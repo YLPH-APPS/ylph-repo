@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error Page</title>
+    <script>
+        window.onload = function() {
+           const msg = params.get('msg');
+            switch(msg)
+            {
+               case'0x80070035':
+                    msg="Check you internet connection!";
+                    break;
+                default:
+                    msg="Unexpected Error!";
+                    break;
+            }             
+            alert(msg);
+            document.title='New Title'
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
